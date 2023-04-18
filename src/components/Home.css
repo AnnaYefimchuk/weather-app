@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.app {
+  background-image: url('../assets/cold-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+  color: #FFF;
+}
+
+.app.warm {
+  background-image: url('../assets/warm-bg.jpg');
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.searchBox {
+  display: flex;
+}
+
+.searchBar {
+  padding: 15px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  box-shadow: 0px 5px rgba(25, 25, 25, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+
+.searchBar:focus {
+  background-color: rgba(255, 255, 255, 0.779);
+}
+
+.locationBox .location {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.locationBox .date {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weatherBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.temp {
+  display: flex;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px 15px;
+  font-size: 102px;
+  font-weight: 700;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.weather {
+  display: flex;
+  margin: 15px auto;
+  flex-direction: row;
+  font-size: 42px;
+  font-weight: 500;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.imgThermometer {
+  width: 32%;
+}
